@@ -1,0 +1,116 @@
+
+
+.site-container {
+	display: grid;
+	place-items: center;
+	min-height: 90vh;
+  color: white;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+
+.profilepic{
+  max-width: 12vh;
+  max-height: 12vh;
+  border-radius: 70px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: flex-start;
+	max-width: 500px;
+	height: 50vh;
+	padding: 3vh;
+
+	border: 2px solid rgb(255, 254, 254);
+	border-radius: 20px;
+	background-color: rgba(10, 69, 117, 0.45);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+	backdrop-filter: blur(15px);
+}
+
+.imgicon{
+  max-width: 35px;
+  max-height: 35px;
+  padding-bottom: 13px;
+}
+ul {
+  display:flex;
+}
+ul li {
+  list-style:none;
+}
+ul li a {
+  display:block;
+  position:relative;
+  width:50px;
+  height:50px;
+  line-height:100px;
+  text-align:center;
+  text-decoration:none;
+  color:#ffffff;
+  margin: 0 30px;
+  transition:.5s;
+}
+ul li a span {
+  position:absolute;
+  transition: transform .5s;
+}
+ul li a span:nth-child(1),
+ul li a span:nth-child(3){
+  width:100%;
+  height:3px;
+  background:#ffffff;
+}
+ul li a span:nth-child(1) {
+  top:0;
+  left:0;
+  transform-origin: right;
+}
+ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform .5s;
+}
+
+ul li a span:nth-child(3) {
+  bottom:0;
+  left:0;
+  transform-origin: left;
+}
+ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition:transform .5s;
+}
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4){
+  width:3px;
+  height:100%;
+  background:#ffffff;
+}
+ul li a span:nth-child(2) {
+  top:0;
+  left:0;
+  transform:scale(0);
+  transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition:transform .5s;
+}
+ul li a span:nth-child(4) {
+  top:0;
+  right:0;
+  transform:scale(0);
+  transform-origin: top;
+}
+ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition:transform .5s;
+}
