@@ -36,3 +36,63 @@
 	border-radius: 10%;
   	background-color: black;
 }
+
+.frame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnicon{
+	max-width: 20px;
+	max-height: 20px;
+	padding-left: 10px;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom-btn {
+  width: 100px;
+  height: 40px;
+  border: 2px white;
+  font-family: cursive;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bt {
+  /* background: #ffffff; */
+  color: #ffffff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-bt:before,
+.btn-bt:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ffffff;
+  transition:400ms ease all;
+}
+.btn-bt:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-bt:hover:before,
+.btn-bt:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
